@@ -2,22 +2,24 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Row } from "react-bootstrap";
-import Category from "./Category";
+import Genre from "./Genre";
 import axios from "axios";
 
-const SearchSelect = ({ cat }) => {
+const SearchButton = ({ cat }) => {
   const onButtonClicked = () => {
     // まだ何も
   };
 
   return (
-    <Form className="bg-light p-3 mt-4">
+    <Form className="p-3 mt-4">
       <p>絞り込み検索</p>
       <hr />
       <Row className="justify-content-center">
-        <Category />
+        <details className="mb-5">
+          <Genre />
+        </details>
         <Button
-          variant="primary"
+          variant="danger"
           type="submit"
           onClick={onButtonClicked}
           class="btn btn-secondary dropdown-toggle"
@@ -25,11 +27,11 @@ const SearchSelect = ({ cat }) => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          絞り込み検索
+          検索
         </Button>
       </Row>
     </Form>
   );
 };
 
-export default SearchSelect;
+export default SearchButton;

@@ -3,7 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import SearchTab from './components/SearchTab'
 import Card from './components/Card'
-import SearchSelect from './components/SearchSelect'
 import { SortBar } from './components/SortBar'
 
 const Home = () => {
@@ -23,7 +22,6 @@ const Home = () => {
                 <Row className="justify-content-center">
                     <Col md={3}>
                         <SearchTab cat={cat} setConditions={setConditions}/>
-                        <SearchSelect cat={cat} setConditions={setConditions}/>
                     </Col>
                     <Col md={7}>
                         <Col xs={{ span: 3, offset: 7 }}>
