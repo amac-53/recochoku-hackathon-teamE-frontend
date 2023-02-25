@@ -13,9 +13,9 @@ const SearchTab = ({cat, setConditions}) => {
             <Row className="justify-content-center">
                 {/* 23区 */}
                 <Form.Group className="mb-3">
-                    <Form.Label htmlFor="Select">23区</Form.Label>
+                    <Form.Label htmlFor="Select">東京23区</Form.Label>
                     <Form.Select id="Select" onChange={onWardSelected}>
-                        <Prefectures />
+                        <Wards />
                     </Form.Select>
                 </Form.Group>
                 <SearchButton />
