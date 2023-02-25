@@ -1,13 +1,13 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 export const Footer = () => {
   return (
     <>
-      <footer className="footer-bs bg-light p-3 mt-2">
+      <footer className="footer-bs p-5 mt-5" style={{ background: "#CC0000" }}>
         <Container>
           <Row>
-            <p className="copyright">&copy; RECOCHOKU HACKATHON INTERNSHIP TEAM E</p>
+            <p className="copyright text-white">&copy; RECOCHOKU HACKATHON INTERNSHIP TEAM E</p>
           </Row>
         </Container>
       </footer>
