@@ -4,9 +4,10 @@ import { useParams } from 'react-router-dom'
 import SearchTab from './components/SearchTab'
 import Card from './components/Card'
 import { SortBar } from './components/SortBar'
+import axios from 'axios';
 
 const Home = () => {
-    const { cat } = useParams();
+    const { venue } = useParams();
     const [conditions, setConditions] = useState({
         'limit': 42,
         'prefecture': '',
@@ -16,18 +17,27 @@ const Home = () => {
         'sort_order': '',
     })
 
+    console.log(venue)
+    // axios.get("http://localhost:5000/posts/1")
+    //     .then(res => {
+    //         console.log(res)
+    //     })
+    //     .catch(err => {
+    //         console.log(err)
+    //     })
+
     return (
         <div>
             <Container>
                 <Row className="justify-content-center">
                     <Col md={3}>
-                        <SearchTab cat={cat} setConditions={setConditions}/>
+                        <SearchTab cat={venue} setConditions={setConditions}/>
                     </Col>
                     <Col md={7}>
                         <Col xs={{ span: 3, offset: 7 }}>
-                            <SortBar cat={cat} setConditions={setConditions}/>
+                            <SortBar cat={venue} setConditions={setConditions}/>
                         </Col>
-                        <Card cat={cat} conditions={conditions}/>
+                        <Card cat={venue} conditions={conditions}/>
                     </Col>
                 </Row>
             </Container>
