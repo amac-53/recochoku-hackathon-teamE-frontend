@@ -4,7 +4,7 @@ import { Row } from 'react-bootstrap'
 import Wards from './Wards'
 import SearchButton from './SearchButton'
 
-const SearchTab = ({cat, setConditions}) => {
+const SearchTab = ({setConditions}) => {
     
     const onWardSelected = (e) => setConditions((prevState) => ({ ...prevState, "ward": e.target.value }))
 

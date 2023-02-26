@@ -9,29 +9,16 @@ import axios from 'axios';
 const Home = () => {
     const { venue } = useParams();
     const [conditions, setConditions] = useState({
-        'limit': 42,
-        'prefecture': '',
-        'startDate': '',
-        'endDate': '',
-        'sort_field': '',
-        'sort_order': '',
+        'hallName': 'KyotoMojo',
+        'area': '渋谷',
     })
-
-    console.log(venue)
-    // axios.get("http://localhost:5000/posts/1")
-    //     .then(res => {
-    //         console.log(res)
-    //     })
-    //     .catch(err => {
-    //         console.log(err)
-    //     })
 
     return (
         <div>
             <Container>
                 <Row className="justify-content-center">
-                    <Col md={3}>
-                        <SearchTab cat={venue} setConditions={setConditions}/>
+                    <Col md={3} className="pt-5">
+                        <SearchTab setConditions={setConditions}/>
                     </Col>
                     <Col md={7}>
                         <Col xs={{ span: 3, offset: 7 }}>
