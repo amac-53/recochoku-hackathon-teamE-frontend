@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Image from 'react-bootstrap/Image'
 import "./Card.css";
 import axios from "axios";
-import moment from "moment";
 import { EmptyBand } from "./EmptyBand";
 import { getSortPar } from "../util/sortKeyValue"
 import { Button } from "react-bootstrap";

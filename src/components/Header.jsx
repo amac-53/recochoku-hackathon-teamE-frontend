@@ -23,7 +23,7 @@ export const Header = () => {
   }
 
   return (
-    <header style={{ position: "sticky", top: 0 }}>
+    <header style={{ position: "sticky", top: 0, zIndex: 10}}>
       <Navbar expand="lg" style={{ background: "#CC0000" }}>
         <Container>
           <Link to={`/${venue}/list`} onClick={() => {setValue(0)}} className="text-white text-decoration-none fs-2">Band Band</Link>
