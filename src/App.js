@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import List from './List'
+import MyCalender from './Calender';
+import NotFound from './NotFound';
+
+const venue = '渋谷O-EAST'
+
+export const VenueContext = React.createContext(venue)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <VenueContext.Provider value={venue}>
+      <BrowserRouter>
+        <div style={{ "minHeight": "100vh", "position": "relative" }}>
+          <Header />
+          <Routes>
+            <Route exact path={'/:venue/list'} element={<List />} />
+            <Route exact path={'/:venue/calender'} element={<MyCalender />} />
+            <Route path={`/*`} element={<NotFound />} />
+          </Routes>
+          <Footer style={{ "position": "absolute", "bottom": "0" }} />
+        </div>
+      </BrowserRouter>
+    </VenueContext.Provider>
   );
 }
 

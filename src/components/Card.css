@@ -1,0 +1,27 @@
+.article-card{
+    padding: 15px 0 13px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.article-card:hover .title{
+    color: blue;
+    text-decoration: underline;
+}
+.article-card:hover {
+    opacity: 0.8;
+}
+.article-img{
+    width: 100px;
+}
+
+.list-article {
+    width: 265px;
+    font-size: 12px;
+    line-height: 0.1;
+}
+
+.title{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 3px;
+    word-break: break-all;
+}
