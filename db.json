@@ -2,18 +2,53 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "bandName": "Mile",
+      "area": "渋谷",
+      "mainImage": "hello",
+      "genre": "jazz",
+      "hall": [
+        {"name": "KyotoMojo" }
+      ]
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "bandName": "Rat",
+      "area": "品川",
+      "mainImage": "hello",
+      "genre": "R&B",
+      "hall": [
+        {"name": "KyotoMojo" }
+      ]
+    },
+    {
+      "id": 3,
+      "bandName": "Bad",
+      "area": "新宿",
+      "mainImage": "hello",
+      "genre": "シンガーソングライター",
+      "hall": [
+        {"name": "KyotoMojo" }
+      ]
+    },
+    {
+      "id": 4,
+      "bandName": "Grant",
+      "area": "目黒",
+      "mainImage": "hello",
+      "genre": "ギターロック",
+      "hall": [
+        {"name": "KyotoMojo" }
+      ]
+    },
+    {
+      "id": 5,
+      "bandName": "Font",
+      "area": "港",
+      "mainImage": "hello",
+      "genre": "ポップ",
+      "hall": [
+        {"name": "KyotoMojo" }
+      ]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
