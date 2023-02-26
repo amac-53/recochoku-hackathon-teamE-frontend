@@ -18,7 +18,7 @@ export const Header = () => {
   ]
   
   const handleChange = (e, newValue) => {
-    setValue(newValue);
+    setValue(newValue)
     navigate(`/${venue}/${pageList[value].name}`);
   }
 

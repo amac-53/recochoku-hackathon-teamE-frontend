@@ -6,7 +6,7 @@ import SearchButton from './SearchButton'
 
 const SearchTab = ({setConditions}) => {
     
-    const onWardSelected = (e) => setConditions((prevState) => ({ ...prevState, "ward": e.target.value }))
+    const onWardSelected = (e) => setConditions((prevState) => ({ ...prevState, "area": e.target.value }))
 
     return (
         <Form className="bg-warning p-3 my-5">

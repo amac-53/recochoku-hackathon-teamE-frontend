@@ -6,7 +6,7 @@ import List from './List'
 import MyCalender from './Calender';
 import NotFound from './NotFound';
 
-const venue = 'KyotoMojo'
+const venue = '渋谷O-EAST'
 
 export const VenueContext = React.createContext(venue)
 

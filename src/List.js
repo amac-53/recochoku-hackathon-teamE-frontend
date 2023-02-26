@@ -4,14 +4,15 @@ import { useParams } from 'react-router-dom'
 import SearchTab from './components/SearchTab'
 import Card from './components/Card'
 import { SortBar } from './components/SortBar'
-import axios from 'axios';
 
 const Home = () => {
     const { venue } = useParams();
     const [conditions, setConditions] = useState({
-        'hallName': 'KyotoMojo',
-        'area': '渋谷',
+        'hallName': '渋谷O-EAST',
+        'area': '',
     })
+
+    // console.log(conditions)
 
     return (
         <div>
@@ -24,7 +25,7 @@ const Home = () => {
                         <Col xs={{ span: 3, offset: 9 }}>
                             <SortBar cat={venue} setConditions={setConditions}/>
                         </Col>
-                        <Card cat={venue} conditions={conditions}/>
+                        <Card conditions={conditions}/>
                     </Col>
                 </Row>
             </Container>
