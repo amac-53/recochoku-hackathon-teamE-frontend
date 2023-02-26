@@ -21,7 +21,7 @@ const Home = () => {
                         <SearchTab setConditions={setConditions}/>
                     </Col>
                     <Col md={7}>
-                        <Col xs={{ span: 3, offset: 7 }}>
+                        <Col xs={{ span: 3, offset: 9 }}>
                             <SortBar cat={venue} setConditions={setConditions}/>
                         </Col>
                         <Card cat={venue} conditions={conditions}/>
